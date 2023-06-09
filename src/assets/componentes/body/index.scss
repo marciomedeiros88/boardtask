@@ -1,0 +1,459 @@
+.body{
+    color: white;
+    padding:10rem;
+    height:100%;
+    margin: auto;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+}
+
+.titulo{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.tabela{
+    display: flex;
+    margin: auto;
+    font-weight: 400;
+    tbody{
+        margin: auto;
+
+        hr{
+            border: 1.5px solid white;
+        }
+    }
+    tr{
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        padding: 1rem;
+        justify-content: space-between;
+        width: auto;
+    }
+    td{
+        height:2rem;
+        padding: 1rem 3rem;
+        width: 9rem;
+        text-align: left;
+        display: flex;
+        svg{
+            height:1rem;
+            transition: all 500ms;
+        }
+        
+        svg:hover{
+            height:1.5rem;
+            transition: all 500ms;
+            cursor: pointer;
+        }
+    }
+    
+
+    .nova_tarefa{
+        font-style: italic;
+        transition: all 500ms;
+    }
+
+    .nova_tarefa:hover{
+        cursor: pointer;
+        color: #0C70F2;
+        transition: all 500ms;
+    }
+    
+}
+
+.modal_excluir{
+    text-align: center;
+    background-color: white;
+    width:40%;
+    height: 25rem;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position:absolute;
+    visibility: hidden;
+    transition: all 500ms;
+
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 32pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 28pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    button{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 30pt;
+        width:15rem;
+        height: 6rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        border:none;
+        color: black;
+        transition: background-color 500ms;
+    }
+    button:hover{
+        color: white;
+        background-color: #0C70F2;
+        cursor: pointer;
+        transition: background-color 500ms;
+    }
+    .botao_nao{
+        background-color: #0C70F2;
+        color: white;
+    }
+    .botao_nao:hover{
+        background-color: #0b51ae;
+        transition: background-color 500ms;
+    }
+    .botao_sim{
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+
+.modal_excluir_visivel{
+    text-align: center;
+    background-color: white;
+    width:40%;
+    height: 25rem;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position:absolute;
+    visibility: visible;
+    transition: background-color 500ms;
+
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 32pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 28pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    button{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 30pt;
+        width:15rem;
+        height: 6rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        border:none;
+        color: black;
+        transition: background-color 500ms;
+    }
+    button:hover{
+        color: white;
+        background-color: #0C70F2;
+        transition: background-color 500ms;
+    }
+    .botao_nao{
+        background-color: #0C70F2;
+        color: white;
+        cursor: pointer;
+    }
+    .botao_nao:hover{
+        background-color: #0b51ae;
+        transition: background-color 500ms;
+    }
+    .botao_sim{
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+}
+
+.modal_editar{
+    text-align: center;
+    background-color: white;
+    width:40%;
+    height: 25rem;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position:absolute;
+    visibility: hidden;
+    transition: all 500ms;
+
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 32pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 28pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    button{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 30pt;
+        width:15rem;
+        height: 6rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        border:none;
+        color: black;
+        transition: background-color 500ms;
+    }
+    button:hover{
+        color: white;
+        background-color: #0C70F2;
+        transition: background-color 500ms;
+    }
+    .botao_nao{
+        background-color: #0C70F2;
+        color: white;
+        cursor: pointer;
+    }
+    .botao_nao:hover{
+        background-color: #0b51ae;
+        transition: background-color 500ms;
+    }
+    .botao_sim{
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+}
+
+.modal_editar_visivel{
+    text-align: center;
+    background-color: white;
+    width:40%;
+    height: 25rem;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position:absolute;
+    visibility: visible;
+    transition: all 500ms;
+
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 32pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 28pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    button{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 30pt;
+        width:15rem;
+        height: 6rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        border:none;
+        color: black;
+        transition: background-color 500ms;
+    }
+    button:hover{
+        color: white;
+        background-color: #0C70F2;
+        transition: background-color 500ms;
+    }
+    .botao_nao{
+        background-color: #0C70F2;
+        color: white;
+        cursor: pointer;
+        transition: all 500ms;
+    }
+    .botao_nao:hover{
+        background-color: #0b51ae;
+        transition: background-color 500ms;
+    }
+    .botao_sim{
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+}
+
+.modal_criar{
+    text-align: center;
+    background-color: white;
+    width:40%;
+    height: 25rem;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position:absolute;
+    visibility: hidden;
+    transition: all 500ms;
+
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 32pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 28pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    button{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 30pt;
+        width:15rem;
+        height: 6rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        border:none;
+        color: black;
+        transition: background-color 500ms;
+    }
+    button:hover{
+        color: white;
+        background-color: #0C70F2;
+        transition: background-color 500ms;
+    }
+    .botao_nao{
+        background-color: #0C70F2;
+        color: white;
+        cursor: pointer;
+    }
+    .botao_nao:hover{
+        background-color: #0b51ae;
+        transition: background-color 500ms;
+    }
+    .botao_sim{
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+}
+
+.modal_criar_visivel{
+    text-align: center;
+    background-color: white;
+    width:40%;
+    height: 25rem;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position:absolute;
+    visibility: visible;
+    transition: all 500ms;
+
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 32pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 28pt;
+        color:black;
+        padding: 1rem 0;
+    }
+    button{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 30pt;
+        width:15rem;
+        height: 6rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        border:none;
+        color: black;
+        transition: background-color 500ms;
+    }
+    button:hover{
+        color: white;
+        background-color: #0C70F2;
+        transition: background-color 500ms;
+    }
+    .botao_nao{
+        background-color: #0C70F2;
+        color: white;
+        cursor: pointer;
+        transition: all 500ms;
+    }
+    .botao_nao:hover{
+        background-color: #0b51ae;
+        transition: background-color 500ms;
+    }
+    .botao_sim{
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+}
+
+// CSS media query
+@media (max-width: 600px)
+{
+  .facet_sidebar
+   {
+    display: none;
+   }
+}
